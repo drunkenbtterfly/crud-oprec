@@ -57,7 +57,7 @@ h2 a {
 .container td {
 	font-weight: normal;
 	font-size: 1em;
-  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+	-webkit-box-shadow: 0 2px 2px -2px #0E1119;
 	-moz-box-shadow: 0 2px 2px -2px #0E1119;
 	box-shadow: 0 2px 2px -2px #0E1119;
 }
@@ -66,16 +66,16 @@ h2 a {
 	text-align: left;
 	overflow: hidden;
 	width: 80%;
-  margin: 0 auto;
-  display: table;
-  padding: 0 0 8em 0;
+	margin: 0 auto;
+	display: table;
+	padding: 0 0 8em 0;
 }
 
 .container td, .container th {
 	padding-bottom: 2%;
 	padding-top: 2%;
-  padding-left:1%; 
-  padding-right: 5%; 
+	padding-left:1%; 
+	padding-right: 5%; 
 }
 
 /* Background-color of the odd rows */
@@ -297,20 +297,20 @@ $data = mysqli_query($koneksi, $query);
 
 // Buat form pencarian
 echo "<div class='searchcontainer'>";
-		echo "<h1>Tabel Database Oprec</h1>";
-		echo "<h2>Cari data pendaftar</h2>";
-		echo "<div class='search-box'>";
-			echo "<div class='search-icon'><i class='fa fa-search search-icon'></i></div>";
-			echo "<form action='' class='search-form' method='GET'>";
-			echo "<input type='text' placeholder='Cari nama...' id='search' autocomplete='off'>";
-			echo "</form>";
-			echo "<svg class='search-border' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:a='http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/' x='0px' y='0px' viewBox='0 0 671 111' style='enable-background:new 0 0 671 111;' xml:space='preserve'>";
-      echo "<path class='border' d='M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280'/>";
-      echo "<path class='border' d='M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280'/>";
-      echo "</svg>";
-			echo "<div class='go-icon'><i class='fa fa-arrow-right'></i></div>";
-		echo "</div>";
-    echo "</div>";
+echo "<h1>Tabel Database Oprec</h1>";
+echo "<h2>Cari data pendaftar</h2>";
+echo "<div class='search-box'>";
+echo "<div class='search-icon'><i class='fa fa-search search-icon'></i></div>";
+echo "<form action='' class='search-form' method='GET'>";
+echo "<input type='text' placeholder='Cari nama...' id='search' autocomplete='off'>";
+echo "</form>";
+echo "<svg class='search-border' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:a='http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/' x='0px' y='0px' viewBox='0 0 671 111' style='enable-background:new 0 0 671 111;' xml:space='preserve'>";
+echo "<path class='border' d='M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280'/>";
+echo "<path class='border' d='M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280'/>";
+echo "</svg>";
+echo "<div class='go-icon'><i class='fa fa-arrow-right'></i></div>";
+echo "</div>";
+echo "</div>";
 
 // Tampilkan data
 
@@ -323,16 +323,16 @@ if (isset($_GET['cari'])) {
 if (mysqli_num_rows($data) > 0) {
     // Tampilkan data dalam tabel
     echo "<table class='container'>";
-	  echo "<thead>";
-		echo "<tr>";
-		echo "<th><h1>No</h1></th>";
+    echo "<thead>";
+    echo "<tr>";
+    echo "<th><h1>No</h1></th>";
     echo "<th><h1>Email</h1></th>";
-		echo "<th><h1>Nama Lengkap</h1></th>";
+    echo "<th><h1>Nama Lengkap</h1></th>";
     echo "<th><h1>Tempat, Tanggal Lahir</h1></th>";
     echo "<th><h1>Domisili</h1></th>";
-		echo "<th><h1>Departemen yang dipilih</h1></th>";
-		echo "</tr>";
-	  echo "</thead>";
+    echo "<th><h1>Departemen yang dipilih</h1></th>";
+    echo "</tr>";
+    echo "</thead>";
     $i = 1;
     while ($row = mysqli_fetch_assoc($data)) {
     echo "<tbody>";

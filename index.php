@@ -263,7 +263,7 @@ main {
   -o-transition: stroke-dashoffset 650ms cubic-bezier(0.755, 0.150, 0.205, 1.000);
 }
 #search {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   position: absolute;
   top: 0;
   left: 0;
@@ -302,7 +302,7 @@ echo "<h2>Cari data pendaftar</h2>";
 echo "<div class='search-box'>";
 echo "<div class='search-icon'><i class='fa fa-search search-icon'></i></div>";
 echo "<form action='' class='search-form' method='GET'>";
-echo "<input type='text' placeholder='Cari nama...' id='search' autocomplete='off'>";
+echo "<input type='text' name='cari' placeholder='Cari nama...' id='search' autocomplete='off'>";
 echo "</form>";
 echo "<svg class='search-border' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:a='http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/' x='0px' y='0px' viewBox='0 0 671 111' style='enable-background:new 0 0 671 111;' xml:space='preserve'>";
 echo "<path class='border' d='M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280'/>";

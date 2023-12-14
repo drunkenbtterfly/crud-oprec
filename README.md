@@ -1,2 +1,3 @@
-# Halaman dengan menampilkan data dari backend dan disertai fitur search box menggunakan PHP Native
-![image](https://github.com/drunkenbtterfly/portofolio-oprec/assets/143263391/e613902c-c36f-40f5-94c3-a0827339886d)
+# Halaman dengan menampilkan data dari backend disertai fitur search box menggunakan PHP Native
+
+https://github.com/drunkenbtterfly/portofolio-oprec/assets/143263391/04867643-e52a-4efe-9f22-493774da3812

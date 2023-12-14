@@ -1,5 +1,4 @@
 # Halaman dengan menampilkan data dari backend disertai fitur search box menggunakan PHP Native
 
-![oprec](https://github.com/drunkenbtterfly/portofolio-oprec/assets/143263391/db3a8a63-8b0f-4da3-8cab-3504d91f414f)
 
-![Uploading oprec.gif…]()
+![oprec](https://github.com/drunkenbtterfly/portofolio-oprec/assets/143263391/ce677a38-b351-4c3d-8f4e-ed37e352b3e5)

@@ -101,6 +101,19 @@ h2 a {
 	 box-shadow: 0 6px 6px -6px #0E1119;
 }
 
+.edit {
+  background-color: #009900;
+  color: #FFFFFF;
+  font-weight: bold;
+
+}
+
+.hapus {
+  background-color: #991f00;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
 .container td:hover {
   background-color: #FFF842;
   color: #403E10;
@@ -292,7 +305,7 @@ main {
 include "koneksi.php";
 
 // Ambil data dari database
-$query = "SELECT `email`, `nama_lengkap`, `ttl`, `domisili`, `no_wa`, `status`, `asal`, `departemen`, `alasan` FROM `reqruitment` WHERE 1";
+$query = "SELECT `email`, `nama_lengkap`, `ttl`, `domisili`, `departemen` FROM `reqruitment` WHERE 1";
 $data = mysqli_query($koneksi, $query);
 
 // Buat form pencarian
@@ -311,6 +324,10 @@ echo "</svg>";
 echo "<div class='go-icon'><i class='fa fa-arrow-right'></i></div>";
 echo "</div>";
 echo "</div>";
+echo "<div class='link-right'>
+      <h2><a href='create.php' class='link-primary'>Tambah Data Baru +</a></h2>
+      </div>";
+
 
 // Tampilkan data
 
@@ -331,6 +348,8 @@ if (mysqli_num_rows($data) > 0) {
     echo "<th><h1>Tempat, Tanggal Lahir</h1></th>";
     echo "<th><h1>Domisili</h1></th>";
     echo "<th><h1>Departemen yang dipilih</h1></th>";
+    echo "<th><h1>Edit Data</h1></th>";
+    echo "<th><h1>Hapus Data</h1></th>";
     echo "</tr>";
     echo "</thead>";
     $i = 1;
@@ -343,13 +362,15 @@ if (mysqli_num_rows($data) > 0) {
     echo "<td>{$row['ttl']}</td>";
     echo "<td>{$row['domisili']}</td>";
     echo "<td>{$row['departemen']}</td>";
+    echo "<td class='edit'><a href='update.php?update=<?= $row[email] ?>'>Edit</a></td>";
+    echo "<td class='hapus'><a href='php/delete.php?hapus={$row['email']}'>Hapus</a></td>";
     echo "</tr>";
     echo "</tbody>";
     $i++;
     }
     echo "</table>";
 } else {
-    echo "Data tidak ditemukan";
+    echo "<h4 style='text-align:center'>Data tidak ditemukan</h4>";
 }
 
 // Tutup koneksi
